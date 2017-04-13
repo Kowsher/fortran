@@ -1,0 +1,14 @@
+LET N=5 TO RUN THE PROGRAM
+
+PROGRAM ARRAY_USING
+    IMPLICIT NONE
+    INTEGER :: N=5,I,ASS=0,A(5),K,VL
+    VL=N+1
+    DO I=1,N
+        READ*,A(I)
+    END DO
+    DO K=1,N
+        VL=VL-1
+        PRINT*,A(VL)
+    END DO
+END PROGRAM
