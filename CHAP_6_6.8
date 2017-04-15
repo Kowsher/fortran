@@ -1,0 +1,9 @@
+PROGRAM FIBONACCI
+    DIMENSION FIB(50)
+    FIB(1)=1
+    FIB(2)=1
+    DO I=3,50
+        FIB(I)=FIB(I-2)+FIB(I-1)
+    END DO
+    PRINT*,INT(FIB)
+END PROGRAM
