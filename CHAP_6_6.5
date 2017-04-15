@@ -1,0 +1,21 @@
+A//////
+PROGRAM MAIN
+    ! DECLARE A(N) ARRAY
+    DO K=1,N,2
+        T=A(K)
+        A(K)=A(K+1)
+        A(K+1)=T
+    END DO
+END PROGRAM
+
+B/////
+
+PROGRAM MAIN
+    ! DECLARE A(N) SIZE OF AN ARRAY
+    T=A(1)
+    NN=N-1
+    DO K=1,N
+        A(K)=A(K+1)
+    END DO
+    A(N)=T
+END PROGRAM
