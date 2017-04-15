@@ -1,0 +1,6 @@
+PROGRAM MAIN
+    READ*,A,B,C
+    SUR=2*(A*B+B*C+C*A)
+    VOL=A*B*C
+    PRINT*,A,B,C,SUR,VOL
+END PROGRAM
