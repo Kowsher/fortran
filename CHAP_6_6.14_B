@@ -1,0 +1,10 @@
+PROGRAM PLYNOMIAL
+    DIMENSION Y(51)
+    READ*,N
+    NN=2*N+1
+    DO I=1,NN
+        X=-N-1+I
+        Y(I)=(2.*X**4-5.*X**3+6.*X**2-8.*X+9)
+    END DO
+    PRINT*,Y
+END PROGRAM
