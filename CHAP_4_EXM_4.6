@@ -19,11 +19,10 @@ END PROGRAM
 
 
 !B......
-PROGRAM MAIN
+ PROGRAM MAIN
     READ*,A,B,C
     D=B**2-4*A*C
-    PRINT*,D
-    IF(D==22 .OR. D==33 .OR. D==44)THEN
+    IF(D<0)THEN
         PRINT*,'THERE ARO NO REAL ROOTS'
         GO TO 10
     ELSE
@@ -32,3 +31,4 @@ PROGRAM MAIN
         PRINT*,ROOT1,ROOT2
     END IF
 10 END PROGRAM
+
