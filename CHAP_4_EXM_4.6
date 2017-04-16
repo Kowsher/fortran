@@ -1,3 +1,24 @@
+!A....
+PROGRAM MAIN
+    !HERE VALUE OF PAY,TYPE WILL BE GIVEN
+    INTEGER TYPE2
+    REAL PAY,NET,PREM
+    IF(TYPE2==1)THEN
+        PREM=9.75
+    ELSE IF(TYPE2==2)THEN
+        PREM=16.25
+    ELSE
+        PREM=24.50
+    END IF
+    NET=PAY-PREM
+    PRINT*,NET
+END PROGRAM
+
+
+
+
+
+!B......
 PROGRAM MAIN
     READ*,A,B,C
     D=B**2-4*A*C
