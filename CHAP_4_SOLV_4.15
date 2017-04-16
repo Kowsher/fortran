@@ -1,0 +1,7 @@
+PROGRAM MAIN
+    X=-4.0
+11  Y=X**4-5*X**2+7*X-8.0
+    PRINT*,X,Y
+    X=X+0.2
+    IF(X<4.0)GO TO 11
+END PROGRAM
