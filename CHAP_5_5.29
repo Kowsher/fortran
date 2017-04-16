@@ -1,0 +1,9 @@
+PROGRAM ASSINGMENT_5_29
+    INTEGER:: CK=0,X,Y,K=0
+    DO X=1,7
+        DO Y=1,5
+            IF((X**2/50)+(3*Y**2/100)<=1)CK=CK+1
+        END DO
+    END DO
+    PRINT*,"THE NUMBER OF POINTS IS ",CK
+END PROGRAM
