@@ -1,0 +1,35 @@
+!A......
+PROGRAM MAIN
+    SUMM=0.0
+    READ*,N
+   DO I=1,N
+    SUMM=SUMM+1.0/FLOAT(I+1)
+   END DO
+   WRITE(6,10)SUMM
+10 FORMAT(1X,F8.2)
+ END PROGRAM
+
+!B.......
+ PROGRAM MAIN
+    SUMM=0.0
+    I=1
+    J=2
+    READ*,N
+10  SUMM=SUMM+1.0/FLOAT(I)-1.0/FLOAT(J)
+    I=I+2
+    J=J+2
+    IF(I<=N.OR.J<=N)GO TO 10
+    WRITE(6,11)SUMM
+11 FORMAT(1X,F8.2)
+ END PROGRAM
+
+C.........
+ PROGRAM MAIN
+    SUMM=0.0
+    READ*,A,N
+    DO I=1,N
+        SUMM=SUMM+1.0/(1.0+FLOAT(I)*A)
+    END DO
+    WRITE(6,11)SUMM
+11 FORMAT(1X,F8.2)
+ END PROGRAM
