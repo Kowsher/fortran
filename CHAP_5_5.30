@@ -1,0 +1,9 @@
+PROGRAM ASSINGMENT_5_30
+    DO I=1,25
+        DO J=1,25
+            DO K=1,30
+                IF((I<J).AND.(I<K).AND.(J<K).AND.(K*K==I*I+J*J))PRINT*,I,J,K
+            END DO
+        END DO
+    END DO
+END PROGRAM
