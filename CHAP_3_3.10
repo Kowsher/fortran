@@ -1,0 +1,6 @@
+PROGRAM ABC
+    READ*,A,B,C
+    S=(A+B+C)/2
+    AREA=SQRT(S*(S-A)*(S-B)*(S-C))
+    PRINT*,AREA
+END PROGRAM
