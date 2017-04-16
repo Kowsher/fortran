@@ -1,0 +1,22 @@
+A.......
+PROGRAM MAIN
+   I=1
+12  PRINT*,I
+   IF(I<100)THEN
+    I=I+1
+    GO TO 12
+   END IF
+END PROGRAM
+
+B........
+PROGRAM MAIN
+    READ*,AMT
+    IF(AMT<=1000)THEN
+        RATE=0.07
+    ELSE
+        RATE=0.06
+    END IF
+    INT=AMT*RATE
+    PRINT*,INT
+END PROGRAM
+
