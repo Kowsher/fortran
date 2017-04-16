@@ -1,0 +1,11 @@
+PROGRAM MAIN
+    DIMENSION FIB(50)
+    FIB(1)=1
+    FIB(2)=1
+    DO I=3,50
+        FIB(I)=FIB(I-1)+FIB(I-2)
+    END DO
+    DO J=1,50
+        PRINT*,INT(FIB(J))
+    END DO
+END PROGRAM
