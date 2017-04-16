@@ -1,0 +1,13 @@
+
+PROGRAM MAIN
+    READ*,N
+    NN=N/2
+    DO K=2,NN
+        IF(MOD(N,K)==0)THEN
+            PRINT*,'NOT PRIME'
+            GO TO 10
+        END IF
+    END DO
+    PRINT*,'PRIME'
+10 END PROGRAM
+
