@@ -1,0 +1,9 @@
+PROGRAM MAIN
+    REAL LAR
+    READ*,N,LAR
+    DO I=2,N
+        READ*,X
+        IF(LAR<=X)LAR=X
+    END DO
+    PRINT*,LAR
+END PROGRAM
