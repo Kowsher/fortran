@@ -1,0 +1,26 @@
+!A...
+
+PROGRAM MAIN
+    I=1
+    DO I=1,99,2
+        IF(MOD(I,7).NE.0)PRINT*,I
+    END DO
+END PROGRAM
+
+!B....
+PROGRAM MAIN
+    INTEGER F(99)
+    I=1
+    K=1
+    DO I=1,99,2
+        IF(MOD(I,7).NE.0)THEN
+            F(K)=I
+            K=K+1
+        END IF
+    END DO
+    DO J=1,39,4
+
+            PRINT*,F(J),F(J+1),F(J+2),F(J+3)
+    END DO
+
+END PROGRAM
