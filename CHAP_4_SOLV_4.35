@@ -1,11 +1,27 @@
-PROGRAM MAIN
-    DIMENSION FIB(50)
-    FIB(1)=1
-    FIB(2)=1
-    DO I=3,50
-        FIB(I)=FIB(I-1)+FIB(I-2)
-    END DO
-    DO J=1,50
-        PRINT*,INT(FIB(J))
-    END DO
-END PROGRAM
+!A.......
+   I=1
+   PRINT*,I
+   J=1
+   PRINT*,J
+10 K=I+J
+   PRINT*,K
+   I=J
+   J=K
+   IF(K<=1000) GO TO 10
+   STOP
+   END
+
+
+
+   I=1
+   PRINT*,I
+   J=1
+   PRINT*,J
+   DO N=1,50
+     K=I+J
+   PRINT*,K
+   I=J
+   J=K
+   END DO
+   STOP
+   END
