@@ -1,0 +1,8 @@
+READ*, N
+DO I=2,N
+    DO K=2,I/2
+        IF((I/K)*K==I) GO TO 20
+    END DO
+    PRINT*,I
+20 END DO
+END
