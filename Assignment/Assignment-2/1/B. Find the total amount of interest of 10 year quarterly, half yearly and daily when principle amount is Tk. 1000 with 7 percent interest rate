@@ -1,0 +1,7 @@
+A=1000
+R=.07
+T=10
+    PRINT*, 'Quarterly Amount =',A*(1+R/4)**(T*4)
+    PRINT*, 'Half Yearly Amount =', A*(1+R/2)**(T*2)
+    PRINT*, 'Daily Amount =',A*(1+R/365)**(T*365)
+ END
