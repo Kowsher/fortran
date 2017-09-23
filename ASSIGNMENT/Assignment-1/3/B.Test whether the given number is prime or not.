@@ -1,0 +1,8 @@
+READ*,I
+CK=0
+    DO K=2,I/2
+        IF((I/K)*K==I)CK=1
+    END DO
+    IF(CK==1)PRINT*,I, ' IS NOT PRIME NUMBER'
+    IF(CK==0) PRINT*,I,' IS  PRIME NUMBER'
+END
