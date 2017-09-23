@@ -1,0 +1,10 @@
+J=1
+DO I=2,2003
+    DO K=2,I/2
+        IF((I/K)*K.EQ.I) GO TO 20
+    END DO
+    PRINT*,J, I
+    J=J+1
+    IF(J.GT.50) GO TO 30
+20 END DO
+30 END
