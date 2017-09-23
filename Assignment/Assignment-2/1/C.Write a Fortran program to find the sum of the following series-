@@ -1,0 +1,6 @@
+SUM=0.0
+ DO A=1,21,2
+    SUM=SUM+(1/A)
+END DO
+PRINT*, 'The sum is=', SUM
+END
