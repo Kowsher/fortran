@@ -1,0 +1,7 @@
+LAR=0
+DO I=1,4
+    READ*,N
+    IF(LAR<N)LAR=N
+END DO
+PRINT*,LAR
+END
