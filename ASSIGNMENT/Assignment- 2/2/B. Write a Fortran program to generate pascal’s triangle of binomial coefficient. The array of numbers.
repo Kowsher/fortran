@@ -1,0 +1,16 @@
+DIMENSION N(15,15)
+ DO I=1,15
+    DO J=1,15
+        N(I,J)=0
+    END DO
+ END DO
+ N(1,1)=1
+ DO I=2,15
+    N(I,1)=1
+    DO J=2,15
+        N(I,J)=N(I-1,J-1)+N(I-1,J)
+    END DO
+    WRITE(6,30)(N(I,J),J=1,I)
+    30 FORMAT(2X,15I5)
+ END DO
+ END
