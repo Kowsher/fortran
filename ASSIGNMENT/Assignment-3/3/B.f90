@@ -1,0 +1,5 @@
+READ*,S
+DO I=1,60
+    PRINT*,"TIME =",I,"DISTANCE=",S*I
+END DO
+END
