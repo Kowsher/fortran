@@ -1,0 +1,9 @@
+DIMENSION K(10, 10), L(10, 10)
+PRINT*, 'INPUT MATRIX SIZE'
+READ*, N
+READ*,((K(I,J),J=1,N),I=1,N)
+READ*,((L(I,J),J=1,N),I=1,N)
+DO I=1,N
+        PRINT*,(K(I,J)+L(I,J),J=1,N)
+END DO
+END
