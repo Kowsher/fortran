@@ -6,6 +6,6 @@ DO I=1,110
     L=J+K
     J=K
     K=L
-    IF(L>50)STOP
+    IF(L>100)STOP
 END DO
 END
