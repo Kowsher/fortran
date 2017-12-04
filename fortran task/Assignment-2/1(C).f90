@@ -1,0 +1,6 @@
+SUM=0.0
+DO T=1,21,2
+    SUM=SUM+(1/T)
+END DO
+PRINT*,SUM
+END

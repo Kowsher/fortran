@@ -1,0 +1,9 @@
+DIMENSION A(10,10)
+READ*,N,M
+DO I=1,N
+    READ*,(A(I,J),J=1,M)
+END DO
+DO I=1,M
+    PRINT*,(A(J,I),J=1,N)
+END DO
+END

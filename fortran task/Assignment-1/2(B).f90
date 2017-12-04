@@ -1,0 +1,3 @@
+READ*,N
+PRINT*,N*(N+1)/2
+END

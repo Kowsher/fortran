@@ -1,0 +1,7 @@
+P=1000
+N=10
+R=0.07
+PRINT*,"QUARTLY=",P*(1+R/4)**(4*N)
+PRINT*,"HALF YEARLY =",P*(1+R/2)**(2*N)
+PRINT*,"QUARTLY=",P*(1+R/365)**(365*N)
+END

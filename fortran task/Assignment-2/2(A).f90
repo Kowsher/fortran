@@ -1,0 +1,4 @@
+DO I=1,30,2
+    PRINT*,I,I+1
+END DO
+END
