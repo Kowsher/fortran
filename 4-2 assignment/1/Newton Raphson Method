@@ -1,0 +1,14 @@
+    read*,x
+    do i=1,20
+        a = f(x)
+        print*, a
+        x=a
+    end do
+    print*,a
+end program
+function f(x)
+    x1 = 2*x*x*x - 2.5*x -5
+    x2 = 6*x*x - 2.5
+    f = x-(x1/x2)
+    return
+end function
