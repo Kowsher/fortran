@@ -1,0 +1,11 @@
+    read*,x
+    do i=1,20
+        a = f(x)
+        x=a
+    end do
+    print*,a
+end program
+function f(x)
+    f = ((9*x-1)**(1.0/3))
+    return
+end function
