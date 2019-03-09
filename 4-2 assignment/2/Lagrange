@@ -1,0 +1,22 @@
+program abc
+    dimension :: x(6),y(6)
+    ex=5
+    t=4.25
+    do j=0,ex
+        read*, x(j), y(j)
+    end do
+    su = 0
+    do k =0,ex
+        pro =1
+        do i=0, ex
+            if(i.NE.k)then
+                pro = pro*((t-x(i))/(x(k)-x(i)))
+
+            end if
+        end do
+        su = su+pro*y(k)
+    end do
+    print*, su
+
+end program
+
