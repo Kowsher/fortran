@@ -1,0 +1,47 @@
+
+dimension :: x(4),y(4),z(4), v(4)
+do i =0, 2
+    read*, x(i),y(i),z(i),v(i)
+end do
+print*, z(0)
+do i=0, 2
+    print*, int(x(i)),int(y(i)), int(z(i)),'|', int(v(i))
+end do
+do i =0, 2
+    if(i==1)then
+        x(i) = x(i)*2
+        y(i)=y(i)*2
+        z(i) = z(i)*0
+        v(i) = v(i)*2
+    end if
+end do
+print*, int(x(1)),int(y(1)), int(z(1)),' ', int(v(1))
+
+x(1)=(x(1)+x(0))/3
+y(1)=(y(1)+y(0))/3
+z(1)=(z(1)+z(0))/3
+v(1)=(v(1)+v(0))/3
+print*, int(x(1)),int(y(1)), int(z(1)),' ', int(v(1))
+do i =0, 2
+    if(i==1)then
+        x(i) = x(i)*4
+        y(i)=y(i)*4
+        z(i) = z(i)*4
+        v(i) = v(i)*4
+    end if
+end do
+print*, int(x(1)),int(y(1)), int(z(1)),' ', int(v(1))
+x(1)=(x(1)+x(2))/2
+y(1)=(y(1)+y(2))/2
+z(1)=(z(1)+z(2))/2
+v(1)=(v(1)+v(2))/2
+print*, int(x(1)),int(y(1)), int(z(1)),' ', int(v(1))
+
+ax=v(1)
+ay = (6*ax-2)/4
+az = 5-5*ay+3*ax
+
+print*, ax, ay, az
+
+end program
+
