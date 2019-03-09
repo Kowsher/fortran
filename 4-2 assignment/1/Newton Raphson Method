@@ -1,14 +1,13 @@
     read*,x
     do i=1,20
         a = f(x)
-        print*, a
         x=a
     end do
-    print*,a
+    print*,5*(sin(a))**2 - 8*(cos(a))**5
 end program
 function f(x)
-    x1 = 2*x*x*x - 2.5*x -5
-    x2 = 6*x*x - 2.5
+    x1 = 5*(sin(x))**2 - 8*(cos(x))**5
+    x2 = 10*sin(x)*cos(x) + 40*(cos(x))**4 * sin(x)
     f = x-(x1/x2)
     return
 end function
