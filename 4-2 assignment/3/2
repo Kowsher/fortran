@@ -1,0 +1,10 @@
+real ::y(11)
+h=1/10.0
+open (unit = 1, file = "file19.txt")
+do i=0,10
+    y(i) = 1.0/sqrt(1+(i*h)**2)
+    write(1,5)y(i)
+end do
+write(1,5) (h/2.0)*((y(0)+y(10))+2*(y(1)+y(2)+y(3)+y(4)+y(5)+y(6)+y(7)+y(8)+y(9)))
+5 format(f8.3)
+end program
