@@ -1,0 +1,9 @@
+real ::y(7)
+h=1/6.0
+open (unit = 1, file = "file1.txt")
+do i=0,6
+    y(i) = 1.0/(1+(i*h)**2)
+    write(1,*)y(i)
+end do
+write(1,*) (h/3.0)*((y(0)+y(6))+4*(y(1)+y(3)+y(5))+2*(y(2)+y(4)))
+end program
