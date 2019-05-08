@@ -1,0 +1,43 @@
+dimension :: x(7),y(7, 7)
+
+n = 6
+do i =0, n
+    read*, x(i), y(i,0)
+end do
+do j = 1, n
+    do i = 0, n-j
+        y(i, j) = 0
+
+    end do
+end do
+do j = 1, n
+    do i = 0, n-j
+        y(i, j) = y(i+1, j-1)-y(i, j-1)
+    end do
+end do
+
+
+PRINT*,(x(i), i=0, n)
+
+do j = 0, n
+
+    print*, (y(i, j), i=0, n-j)
+
+end do
+
+
+
+xx = 1.30
+h = 0.05
+u = (xx-xx)/h
+print*, f1(h, xx, u)
+print*, f2(h, xx, u)
+end program
+function f1(h, xx, u)
+    f1 = (1/h)*(0.022+(1/2) + ((-0.0003)*(1/2)) +  ((1/3)*(0.0003)) + ((1/4)*(0.0004)) + ((1/5)*(0.0005)) + ((1/6)*0.0005) )
+end function
+
+function f2(h, xx, u)
+    f2 = (1/(h*h))*(-0.0003 + 0.0003 + (11.0/12.0)*0.0004+(5.0/6.0)*0.0005 + (137.0/180.0)*0.0005)
+end function
+
