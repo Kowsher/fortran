@@ -1,0 +1,7 @@
+read*, x1, y1, d1
+read*, x2, y2, d2
+
+x3 = sqrt((d1+d2)/2)
+x4 = sqrt((d2-d1)/2)
+print*, x3, x4
+end program
